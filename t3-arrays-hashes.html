@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<head>
+  <title>Arrays and Hashes</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="your-stylesheet-link-here.css">
+</head>
+
+<main>
+  <h1>What array hashes?</h1>
+  <h2>What are arrays and hashes?</h2>
+  <h4>4/4/15</h4>
+
+  <section>
+    <p>
+    	Array and Hashes are two different yet similar types of objects in an object oriented language such as Ruby.  
+    	They are similar in that they both can contain multiple elements.  What differs is how they are organized and how the elements are called.
+    </p>
+    <p>
+        An array is organized numerically.  This is done by way of index number.  An array's index begins with 0.
+    </p>
+    <p>
+    	food = ["apple", "cheeseburger", "pizza", "pie", "tomato"]
+    </p>
+    <p> 
+    	In the example above, the 1st element "apple" can be called by using "food[0]", because the index begins with 0.  Likewise the last element "tomato" can be called by using "food[4]".  An additional method for calling tomato would be "food[-1]".  Because indices start with 0, Ruby knows to call the last letter.  So in that regard, an alternate method for calling "apple" would be to  tell ruby to call "food[-5]."
+    </p>
+    <p>
+    	Hashes are not organized in the same way as arrays.  The elements are not numbered by index.  
+    	Instead the elements of a hash are organized into key/value pairs.
+    	The way to call up a value in a hash is to use its key.
+    </p>
+    <p>
+    	food = { "fruit" => "apple", "lunch" => "cheeseburger", "dinner" => "pizza", "counts as a vegetable" => "tomato"}
+    </p>
+    <p>
+    	In this example, the elements of "food" are not linked to a specific index number (well maybe a little, more on that later) but are linked to the key given to them.  So to call up "apple" with this example, the command would be 'food["fruit"]', this would give you "apple".
+    	As far as the index number goes, "food[0]" would not give you "apple".
+    	If you wanted to use index numbers to call "apple", you would have to take into consideration both the key and the value.
+    	"food[0][1]" would call apple, because it is in the first [0] element, and is the second [1] part of that element.
+    </p>
+    <p>
+    	A reason you would use an array is to organize a list or similar grouping.
+    	places_to_visit = ["Egypt, "Greece", "Spain", "Japan", "Antarctica"]
+
+    	A hash would be used if multiple dissimilar information was needed to be stored.
+    	For example someones personal information:
+    	profile_information = { "name" => "Ragnar", "occupation" => "Viking", "like" => "pillaging", "dislike" => "sailing east" }
+    </p>
+    <p>
+      #DBCArrayHash
+     </p>
+
+      <!-- copy and paste as many sections as you want to add paragraphs -->
+  </section>
+</main>
+
