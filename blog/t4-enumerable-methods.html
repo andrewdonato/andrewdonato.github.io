@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<head>
+  <title>Enumerables</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="your-stylesheet-link-here.css">
+</head>
+
+<main>
+  <h1>Enumerables</h1>
+  <h2>What are they</h2>
+  <h4>4/12/15</h4>
+
+  <section>
+    <p>
+      First off, what is an enumerable?  According to the Well-Grounded Rubyist by David A. Black an Enumerable is a module that "endows collection objects with the knowledge of how to traverse and transform themselves in a great number of ways."  Simply put, enumerable is a method used to count and modify objects in a collection.  
+    <p>
+      There are lots of uses for enumerables such as Enumerable#map which lets you change each item in an array in the same manner. Enumerable#group_by which according to ruby-doc.org, lets you create hashes where "the keys are the evaluated keys from  the block and the values are array of elements in the collection that correspond to the key".  Enumerable#cycle lets you call a block (block is the code that tells the enumerable what to do) on each element of the array a designated or infinite amount of times.  In this post we will be discussing the Enumerable#cycle at a greater depth.
+    </p>
+    <p>
+      As I said earlier, the Enumerable#cycle can let you call a block of code while cycling through the array an infinite amount of times.
+      For example:
+
+      array = [1, 2, 3, 4]
+      array.cycle { |x| puts x }      # this will print 1, 2, 3, 4, 1, 2, 3, 4, 1, 2, 3, 4, and so on until the user uses ctrl-c to break the cycle
+
+      array.cycle(2) { |x| puts x }   # this will print 1, 2, 3, 4, 1, 2, 3, 4
+
+      The 2nd example only printed out 2 cycles because we wrote ".cycle(2)".
+
+    </p>
+    <p>
+      So far we have seen how .cycle can be used to do things an infinite amount of times or a finite amount of times, but there are much more options when combined with other methods.  For example if we just wanted to go through each of the elements of an array.  Lets create an array for the days of the week.
+
+      days = %w{ Monday Tuesday Wednesday Thursday Friday Saturday Sunday }     # "%w{}" adds in the quotes and commas for you when creating the array
+      days = days.cycle                                                         # this turns the array into a cycle
+      
+      Now we can use another enumerator .next to bring up each of the days
+
+      days.next                 #=> Monday
+      days.next                 #=> Tuesday
+      days.next                 #=> Wednesday
+
+    </p>
+    <p>
+    Lets see this in action.  Lets pretend that you have a number of friends who are insanely jealous of each other. You want to visit one friend each day of the week but you don't want to visit any friend more than the others.  We are going to create a new array for friends and will use the days array we created earlier.
+
+    friends = %w{ Bob Janet Sue Mike Clarissa}.cycle        # We can add cycle directly to the end of the literal notation.
+
+    Now lets create a schedule for visiting with them for the course of 2 weeks (14 days)
+
+    14.times do 
+      day = days.next
+      friend = friends.next
+
+      puts "#{day}: visit #{friend}"
+    end
+
+    =>  Monday: visit Bob                                                                                                                                                                 
+        Tuesday: visit Janet                                                                                                                                                              
+        Wednesday: visit Sue                                                                                                                                                              
+        Thursday: visit Mike                                                                                                                                                              
+        Friday: visit Clarissa                                                                                                                                                            
+        Saturday: visit Bob                                                                                                                                                               
+        Sunday: visit Janet 
+
+        Monday: visit Sue                                                                                                                                                                 
+        Tuesday: visit Mike                                                                                                                                                               
+        Wednesday: visit Clarissa                                                                                                                                                         
+        Thursday: visit Bob                                                                                                                                                               
+        Friday: visit Janet                                                                                                                                                               
+        Saturday: visit Sue                                                                                                                                                               
+        Sunday: visit Mike   
+
+Note if you ever want to reset the cycle back to the beginning you can use .rewind
+
+friends.rewind      # brings you back to Bob, when .next would have brought you Clarissa in this example.
+
+    </p>
+
+      <!-- copy and paste as many sections as you want to add paragraphs -->
+  </section>
+</main>
+
