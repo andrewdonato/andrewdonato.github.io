@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<head>
+  <title>Andrew Donato Portfolio</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="your-stylesheet-link-here.css">
+</head>
+
+<main>
+  <h1>Ruby Classes</h1>
+  <h2>Creating an inventory</h2>
+  <h4>4/19/2015</h4>
+
+  <section>
+    <p>
+      This week we covered Ruby classes.  What is a class in ruby (or other object oriented languages)?  
+      A class in an object oriented language operates in the same manner that classifications do in the real or physical world.
+      An object is a thing that belongs to a class.  A class is a way to talk about multiple objects that have similar characteristics or functions.
+      Below I have created the class Container and will use this to explain how classes in an object oriented language translate into the physical realm.
+    </p>
+    <p>
+      <Ruby>
+        class Container
+          def initialize(max_size)
+            @max_size = max_size
+            @items_in_bag = Array.new()
+          end
+          
+          def size
+            @max_size
+          end
+          
+          def add(items_array)
+            items_array.each_with_index do |item, index|
+              @items_in_bag << item
+            end
+            raise ArgumentError.new ("Bag cannot fit all items") if @items_in_bag.length > @max_size
+          end
+            
+          def look_inside
+            p @items_in_bag
+          end
+          
+        end
+
+        bag = Container.new(10)
+
+        p "Maximum amount of items: " + bag.size.to_s
+        bag.add([1, 2, 3, 4, 5])
+        bag.look_inside
+
+        bag.add([6, 7, 8, 9, 10])
+        bag.look_inside
+
+        bag.add([11])
+        bag.look_inside          
+      </Ruby>
+    </p>
+    <p>
+        I have created the class Container.  In ruby and other object oriented languages everything is an object, this includes classes. 
+        While a container itself is an object that can holds things, other objects that have similar function and behavior can be classified as containers as well.
+        In the above example, I have created a bag under the classification of container.  
+        Similarly I could have created a jar, or a box, or even a persons hands if we were only talking about the ability to hold/contain things.
+        All these things fall under the classification of container.
+        This is because they all have the same function (holding stuff) and the same limitations (how much stuff they can hold).
+        The bag, the jar, the box, the hands holding stuff, all are different instances of objects that can be classified as a container.
+
+    </p>
+     <p>
+        In this example the bag, which is a container, has two different methods that can be called on it.  
+        These methods are adding items, and seeing what items are inside the container.
+        Another method I should have created would have been to remove items, but I will save that for another time.
+        Just like in real world, you can perform one of these actions(methods) on the item.
+        You can look inside the bag (bag.look_inside), add things to the bag (bag.add(thing)) or remove things from the bag (bag.remove(thing)).
+        Although not yet on that last part, but thats the general idea.
+    </p>
+    <p>
+        #DBCClass
+    </p>
+
+      <!-- copy and paste as many sections as you want to add paragraphs -->
+  </section>
+</main>
+
