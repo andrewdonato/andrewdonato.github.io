@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<head>
+  <title>Andrew Donato blog post</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="your-stylesheet-link-here.css">
+</head>
+
+<main>
+  <h1>Ruby scope of variables and constants</h1>
+  <h2></h2>
+  <h4>4/26/15</h4>
+
+  <section>
+    <p>
+      Lets talk about the variable scope of Ruby.  Variable scope defines where a variable can be accessed inside a program. Ruby has 4 types of variables and a constant.  These variables have a different coverage area, or scope.  From smallest to greatest, these variables are local, @instance, @@class, and $global, and of there is the CONSTANT.   Not all variables can be accessed everywhere, even from within the same program.  An analogy of this is the news. Local news covers local events and is not readily available to people from outside that area.  Instance news would be an interesting and individual story that suddenly pops up, like a car chase or a hurricane warning.  Class news is more widespread and would include things like large scale recalls or companies going out of business.  Global news is global of course and would cover large scale events like wars and the economy. Constants don't really fit the news analogy because they do not really change once declared.  A news constant would be more along the lines of the time and channel that the news was airing.
+    </p>
+    <p>
+      What is the scope of each variable and constant?
+      Local variables are restricted within the method or loop in which they are declared.  They cannot be accessed outside of these coding constructs and so the same names can be reused with different data under different methods.  A common example of this is when an index variable is created (I like using idx).  The same variable name can be used for different loops although this can get confusing. Local variable names begin with a lowercase letter or an underscore (local_variable).     
+    </p>
+    <p>
+      Instance variables are variables within a class that are specific to one object (or instance) of that class.  Objects within the same class will have their own instance variables.  These variables are present throughout the entire object, but are not shared between objects, since the others already have their own.  Instance variables are notated by placing a "@" in front of the variable name (@instance_variable).
+    </p>
+    <p>
+      Class variables are shared among all the objects (or instances) that belong to class.  Every object within a class uses the same data for the class variable, so if one object changes the class variable, it changes for all other instances within that class.  Class variables are dictated using @@ (@@class_variable).
+    </p>
+    <p>
+      Global variables are available throughout the entire program in which they are declared, regardless of where they are declared.  They can be declared within a loop and called from without the loop or vice versa.  Different methods, instances, or classes all can share a single global variable.  Global variables are discouraged for use because they can make debugging difficult since a global variable exists throughout the entire program.  Global variables are declared by using "$" ($global_variable).
+    </p>
+    <p>
+      Constants are values that are not supposed to be changed.  Ruby allows you to do so however, though it gives you a warning in the process.
+      If a constant is declared within a class or module, it behaves as a class instance and is available throughout that class or module.  If it is not declared within a class or module it acts as a global variable and is available throughout the entire application.  Constants are named by using capital letters (CONSTANT).
+    </p>
+    <p>
+      #DBCConcepts
+    </p>
+      <!-- copy and paste as many sections as you want to add paragraphs -->
+  </section>
+</main>
+
