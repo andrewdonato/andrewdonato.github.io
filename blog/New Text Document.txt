@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<head>
+  <title>Andrew Donato blog</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="your-stylesheet-link-here.css">
+</head>
+
+<main>
+  <h1>Stereotype Threat</h1>
+  <h2></h2>
+  <h4>4/26/15</h4>
+
+  <section>
+    <p>
+      Stereotype Threat is a social phenomenon that suggests that a person's performance will be altered when a performance stereotype is pointed out, in either a subliminal or a conscious manner.  For example if members of an ethnic group are about to take a test, they will perform poorly if told that their ethnic group does not perform well in regards to the subject material.   
+    </p>
+    <p>
+      This has been demonstrated in research by Sian Beilock and Allen McConnell with women in regards to math and science tests.  Two groups of women were studied, one group (the testing group) was told that research has found that women do not perform well at math exams, while the other group (the control) was not told anything.  The women in the testing group performed worse than the women in the control group.  The researched found that the testing group was more concerned with their performance and more likely to ruminate.  The testing group was more preoccupied with verbal thoughts than they were with the math test.
+    </p>
+    <p>
+      Stereotype threat is not just limited to negative performance stereotypes.  According to a 2002 study by Shih, Ambady, Richeson, Fujita, & Gray, positive stereotypes can damper performance as well if they are made explicit.  According to the experiment, 3 groups of asian american students were given surveys before a math test.  The control group was given a survey on  their entertainment preferences, the 1st testing group was given a survey on their ethnic identity without any focus on stereotypes. The 2nd testing group was given a survey on their beliefs involving racial stereotypes.  The experiment found that the 1st testing group (subtle) performed better than the control group and the 2nd testing group (blatant). The 2nd testing group performed poorly, despite the stereotypes being positive, this suggests that the blatant stereotypes increased pressure on the students to meet high performance expectations which in turned lowered their performance.  
+    </p>
+    <p>
+      On a personal level, I have seen both ends of stereotype threat.  I am half-chinese and half-italian and I grew up in a town that was half-asian and half-white.  I liked to joke that as a half-asian half-white kid in Arcadia that I was the majority, but since I was the only majority that I was also the only minority in my town.  I never quite knew where to try to fit in and ended up with a group of friends made from both halves of the ethnic majorities.  When it came to diversity I never really felt on the outside but I never really felt on the inside of either side really. I was always the other, the asian kids thought of me more as white and the white kids thought of me more as asian but I got along well enough with everyone that it didn't seem to be an issue on the social side.
+    </p>
+    <p>
+      Academically I did not conform to the asian stereotypes, which I knew and was reminded every test, since half of my classes were asian unless they were AP or honors, then most of the class was. I was not a great student and this did cause me some distress going on, especially since my mother is the chinese parent and took schooling very seriously.  I was also enrolled in chinese school where I felt very much the outsider.  
+      I was the only (sort of) white student in chinese school and also was the only student who didn't speak chinese at home.  Chinese school does not focus on learning how to speak chinese but only on writing it.  The assumption was that Chinese was the primary language spoken at home, which was not at all the case for me.  So I did poorly in chinese school, the teachers didn't like me and I didn't like them.  Chinese school teachers were willing to hit you with a stick and I got whacked a few times, until I broke the stick and was hero to my class.
+      So yes, I have faced both ends (the positive and the negative stereotypes) of stereotype threat, because I both belong to and did not belong to the groups in question at my school.  
+    </p>
+    <p>
+      #DBCStereotypeThreat
+    </p>
+      <!-- copy and paste as many sections as you want to add paragraphs -->
+  </section>
+</main>
+
