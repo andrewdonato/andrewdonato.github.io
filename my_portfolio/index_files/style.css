@@ -1,0 +1,9 @@
+.mycol{
+	box-sizing:border-box;
+	float:left;width:25%;
+	border-style:solid;
+}
+
+.mycol img{
+	width:100%;
+}
