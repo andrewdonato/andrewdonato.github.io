@@ -46,6 +46,9 @@
   border: 0;
 }
 
+.top of page {
+  background-color: black;
+}
 
 
 
@@ -67,11 +70,23 @@
 
 .mission-statement-container {
   width: 100%;
-  background-color: #FAEBD7;
+  min-height: 400px;
+  background-color: grey;
+  /*background-color: #FAEBD7;*/
   padding-top: 110px;
   padding-bottom: 110px;
   padding-left: 20%;
   padding-right: 20%;
+  /*opacity: 0.85;*/
+}
+
+.projects-container {
+  width: 100%;
+  background-color: white;
+  padding-top: 110px;
+  padding-bottom: 110px;
+  /*padding-left: 20%;*/
+  /*padding-right: 20%;*/
   /*opacity: 0.85;*/
 
 }
@@ -143,10 +158,13 @@ html {
   color: #00CCFF;
 }
 
+
 a {
   text-decoration: none;
-  color: #00CCFF;
+  color: white;
+  /*color: #00CCFF;*/
 }
+
 
 .sign-out {
   color: white;
