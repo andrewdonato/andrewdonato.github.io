@@ -1,0 +1,21 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+
+
+.hidden {
+  color: red;
+}
+
+.photo {
+    text-align: center; /*for centering images inside*/
+}
+.photo img {
+    width: 300px; /*set the width or max-width*/
+    height: 350px; /*this makes sure to maintain the aspect ratio*/
+}
